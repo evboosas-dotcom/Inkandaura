@@ -10,91 +10,135 @@
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #f5e9dd, #f7d8d0);
     color: #333;
-    text-align: center;
   }
   header {
-    padding: 1.5rem 1rem 1rem;
+    text-align: center;
+    padding: 2.5rem 1rem;
   }
   header h1 {
-    font-size: 2rem;
-    color: #b08d57; /* champagne gold */
-    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
+    color: #b08d57;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
   }
   header p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: italic;
     color: #a67c52;
-    margin-bottom: 1rem;
+  }
+  section {
+    padding: 1.8rem 1rem;
+    max-width: 650px;
+    margin: auto;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #b08d57;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+  .services {
+    display: grid;
+    gap: 1rem;
+  }
+  .service {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.2rem;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   }
   .booking {
-    margin: 1rem auto;
+    text-align: center;
+    margin-top: 1.5rem;
   }
   .booking a {
-    display: block;
-    margin: 0.5rem auto;
-    padding: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
     background: #b08d57;
     color: white;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
-    max-width: 250px;
-    transition: background 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s ease, transform 0.2s ease;
   }
   .booking a:hover {
-    background: #a67c52;
+    background: #a07b48;
+    transform: translateY(-2px);
   }
-  .services, .faq {
-    background: rgba(255, 255, 255, 0.75);
-    padding: 1rem;
-    margin: 1rem auto;
-    border-radius: 10px;
-    max-width: 500px;
+  .faq {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   }
-  .service {
-    padding: 0.5rem;
-    font-weight: bold;
+  .faq-item {
+    margin-bottom: 1rem;
   }
   footer {
+    text-align: center;
     padding: 1rem;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #666;
   }
 </style>
 </head>
 <body>
+  <header>
+    <h1>Ink & Aura</h1>
+    <p>Ink the Moment. Own the Aura.</p>
+  </header>
 
-<header>
-  <h1>Ink & Aura</h1>
-  <p>Ink the Moment. Own the Aura.</p>
-</header>
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">Nails (Acrylic)</div>
+      <div class="service">Semi-Permanent Tattoos</div>
+      <div class="service">Pedicures</div>
+      <div class="service">Piercings</div>
+      <div class="service">Thrift Clothing</div>
+    </div>
+  </section>
 
-<section class="booking">
-  <a href="https://wa.me/2349160118804" target="_blank">📲 Book on WhatsApp</a>
-  <a href="https://instagram.com/inkandaura" target="_blank">📸 Book on Instagram</a>
-</section>
+  <section class="booking">
+    <h2>Book Now</h2>
+    <a href="https://wa.me/2349160118804">WhatsApp</a>
+    <a href="https://www.instagram.com/ink_.aura?igsh=MXE5Y2ZjcmRvNGcxdA%3D%3D&utm_source=qr">Instagram</a>
+  </section>
 
-<section class="services">
-  <h2 style="color:#b08d57;">Our Services</h2>
-  <div class="service">💅 Nails (Acrylic)</div>
-  <div class="service">🖋 Semi-Permanent Tattoos</div>
-  <div class="service">🦶 Pedicures</div>
-  <div class="service">📌 Piercings</div>
-  <div class="service">👗 Thrift Clothing</div>
-</section>
+  <section class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <strong>Where are you located?</strong>
+      <p>We are in Benin City, Nigeria.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Do you take walk-ins?</strong>
+      <p>We work by appointment to give you the best experience.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How do I book?</strong>
+      <p>Click our WhatsApp or Instagram booking link above.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Do you require a deposit?</strong>
+      <p>No deposit required for now, but booking is essential.</p>
+    </div>
+  </section>
 
-<section class="faq">
-  <h2 style="color:#b08d57;">FAQ</h2>
-  <p><strong>📍 Location:</strong> Benin City, Nigeria</p>
-  <p><strong>⏳ Walk-ins:</strong> Appointments only</p>
-  <p><strong>💬 How to Book:</strong> Use WhatsApp or Instagram above</p>
-  <p><strong>💵 Deposit:</strong> Not required at the moment</p>
-</section>
-
-<footer>
-  Benin City • WhatsApp: 09160118804 • Instagram: @inkandaura
-</footer>
-
+  <footer>
+    Benin City • WhatsApp: 09160118804 • Instagram: @ink_.aura
+  </footer>
 </body>
 </html>
