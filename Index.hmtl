@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ink & Aura</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5e9dd, #f7d8d0);
+    color: #333;
+    text-align: center;
+  }
+  header {
+    padding: 1.5rem 1rem 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    color: #b08d57; /* champagne gold */
+    margin-bottom: 0.3rem;
+  }
+  header p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #a67c52;
+    margin-bottom: 1rem;
+  }
+  .booking {
+    margin: 1rem auto;
+  }
+  .booking a {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 1rem;
+    background: #b08d57;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    max-width: 250px;
+    transition: background 0.3s;
+  }
+  .booking a:hover {
+    background: #a67c52;
+  }
+  .services, .faq {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-width: 500px;
+  }
+  .service {
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+  footer {
+    padding: 1rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Ink & Aura</h1>
+  <p>Ink the Moment. Own the Aura.</p>
+</header>
+
+<section class="booking">
+  <a href="https://wa.me/2349160118804" target="_blank">📲 Book on WhatsApp</a>
+  <a href="https://instagram.com/inkandaura" target="_blank">📸 Book on Instagram</a>
+</section>
+
+<section class="services">
+  <h2 style="color:#b08d57;">Our Services</h2>
+  <div class="service">💅 Nails (Acrylic)</div>
+  <div class="service">🖋 Semi-Permanent Tattoos</div>
+  <div class="service">🦶 Pedicures</div>
+  <div class="service">📌 Piercings</div>
+  <div class="service">👗 Thrift Clothing</div>
+</section>
+
+<section class="faq">
+  <h2 style="color:#b08d57;">FAQ</h2>
+  <p><strong>📍 Location:</strong> Benin City, Nigeria</p>
+  <p><strong>⏳ Walk-ins:</strong> Appointments only</p>
+  <p><strong>💬 How to Book:</strong> Use WhatsApp or Instagram above</p>
+  <p><strong>💵 Deposit:</strong> Not required at the moment</p>
+</section>
+
+<footer>
+  Benin City • WhatsApp: 09160118804 • Instagram: @inkandaura
+</footer>
+
+</body>
+</html>
